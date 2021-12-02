@@ -44,7 +44,7 @@ namespace Ms_sena
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ms_sena v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ms_Sena_Perficient v1"));
 
             // app.UseHttpsRedirection();
             app.UseCors("CorsPolicy");
