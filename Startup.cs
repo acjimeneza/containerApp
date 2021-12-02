@@ -30,7 +30,7 @@ namespace Ms_sena
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ms_sena", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ms_sena_V2", Version = "v1" });
             });
             services.AddHealthChecks();
             services.AddCustomMvc(_configuration);
@@ -44,7 +44,7 @@ namespace Ms_sena
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ms_Sena_Perficient v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ms_Sena_Perficient v2"));
 
             // app.UseHttpsRedirection();
             app.UseCors("CorsPolicy");
